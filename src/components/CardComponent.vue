@@ -1,15 +1,15 @@
 <template>
     <div class="character">
-        <img :src="item.image" :alt="item.name">
-        <h2>{{ item.name }}</h2>
-        <h3>{{ item.status }}</h3>
-        <h3>{{ item.species }}</h3>
+        <img :src="character.image" :alt="character.name">
+        <h2>{{ character.name }}</h2>
+        <h3>{{ character.status }}</h3>
+        <h3>{{ character.species }}</h3>
     </div>
 </template>
 
 <script>
     export default {
-        name: 'CardComponet',
+        name: 'CardComponent',
         props: {
             character: Object
         }

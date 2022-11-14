@@ -5,20 +5,20 @@
         </div>
             <div class="row" v-if="!loading">
                 <div class="col-12 col-sm-6 col-md-4 col-lg-3" v-for="(item, index) in characters" :key="item.id">
-                    <CardComponentVue :character="item"/>
+                    <CardComponent :character="item"/>
                 </div>
             </div>
         </div>
 </template>
 
 <script>
-import CardComponent from './components/CardComponent.vue';
+import CardComponent from './CardComponent.vue';
     export default {
         components:{
             CardComponent
         },
         name: 'CharacterList',
-        props:['characters', 'loading']
+        props:["characters", "loading"]
     }
 </script>
 
